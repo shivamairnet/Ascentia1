@@ -1,4 +1,10 @@
 {
+  "builds": [
+    {
+      "src": "public/**/*",
+      "use": "@vercel/static"
+    }
+  ],
   "routes": [
     { "src": "/about-us", "dest": "/about-us.html" },
     { "src": "/contact-us", "dest": "/contact-us.html" },
@@ -9,7 +15,7 @@
     { "src": "/travel-app-development", "dest": "/travel-app-development.html" },
     { "src": "/healthcare-app-development", "dest": "/healthcare-app-development.html" },
     { "src": "/ecommerce-app-development", "dest": "/ecommerce-app-development.html" },
-    { "src": "/logistics-software-development", "dest": "/public/logistics.html" },
+    { "src": "/logistics-software-development", "dest": "/logistics.html" },
     { "src": "/real-estate-app-development", "dest": "/real-estate-app-development.html" },
     { "src": "/interior-design-app-development", "dest": "/interior-design-app-development.html" },
     { "src": "/blog", "dest": "/blog.html" },
