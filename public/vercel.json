@@ -16,7 +16,6 @@
     { "source": "/blog", "destination": "/blog.html" },
     { "source": "/travel-app-development-in-tourism", "destination": "/travel-app-development-in-tourism.html" },
     { "source": "/latest-tourism-insights2025", "destination": "/latest-tourism-insights2025.html" },
-    { "source": "/", "destination": "/index.html" },
-    { "source": ".*", "destination": "/index.html" }
+    { "source": "/", "destination": "/index.html" }
   ]
 }
