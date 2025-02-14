@@ -1,27 +1,22 @@
 {
-  "builds": [
-    {
-      "src": "public/**/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    { "src": "/about-us", "dest": "/about-us.html" },
-    { "src": "/contact-us", "dest": "/contact-us.html" },
-    { "src": "/enterprise-resource-planning", "dest": "/enterprise-resource-planning.html" },
-    { "src": "/complaint-management-system", "dest": "/complaint-management-system.html" },
-    { "src": "/library-management-system", "dest": "/library-management-system.html" },
-    { "src": "/education-app-development", "dest": "/education-app-development.html" },
-    { "src": "/travel-app-development", "dest": "/travel-app-development.html" },
-    { "src": "/healthcare-app-development", "dest": "/healthcare-app-development.html" },
-    { "src": "/ecommerce-app-development", "dest": "/ecommerce-app-development.html" },
-    { "src": "/logistics-software-development", "dest": "/logistics.html" },
-    { "src": "/real-estate-app-development", "dest": "/real-estate-app-development.html" },
-    { "src": "/interior-design-app-development", "dest": "/interior-design-app-development.html" },
-    { "src": "/blog", "dest": "/blog.html" },
-    { "src": "/travel-app-development-in-tourism", "dest": "/travel-app-development-in-tourism.html" },
-    { "src": "/latest-tourism-insights2025", "dest": "/latest-tourism-insights2025.html" },
-    { "src": "/", "dest": "/index.html" },
-    { "src": ".*", "dest": "/index.html" }
+
+  "rewrites": [
+    { "source": "/about-us", "destination": "/about-us.html" },
+    { "source": "/contact-us", "destination": "/contact-us.html" },
+    { "source": "/enterprise-resource-planning", "destination": "/enterprise-resource-planning.html" },
+    { "source": "/complaint-management-system", "destination": "/complaint-management-system.html" },
+    { "source": "/library-management-system", "destination": "/library-management-system.html" },
+    { "source": "/education-app-development", "destination": "/education-app-development.html" },
+    { "source": "/travel-app-development", "destination": "/travel-app-development.html" },
+    { "source": "/healthcare-app-development", "destination": "/healthcare-app-development.html" },
+    { "source": "/ecommerce-app-development", "destination": "/ecommerce-app-development.html" },
+    { "source": "/logistics-software-development", "destination": "/logistics.html" },
+    { "source": "/real-estate-app-development", "destination": "/real-estate-app-development.html" },
+    { "source": "/interior-design-app-development", "destination": "/interior-design-app-development.html" },
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/travel-app-development-in-tourism", "destination": "/travel-app-development-in-tourism.html" },
+    { "source": "/latest-tourism-insights2025", "destination": "/latest-tourism-insights2025.html" },
+    { "source": "/", "destination": "/index.html" },
+    { "source": ".*", "destination": "/index.html" }
   ]
 }
