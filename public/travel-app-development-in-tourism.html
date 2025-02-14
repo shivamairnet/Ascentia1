@@ -118,173 +118,230 @@
   display: flex;
 }
 
-.leftDiv {
-  width: 20%;
-  padding: 5px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  align-self: flex-start;
-  height: 420px;
-}
 
-.innerDiv {
-  width: 60%;
-  padding: 5px;
-  height: 430rem;
-}
 
-.rightDiv{
-  width: 20%;
-  padding: 5px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  align-self: flex-start;
-  height: 420px; 
-}
-
-.section-blog-content {
-    display: flex;
-    height: 100vh;
-    overflow: hidden;
-}
-
-@media (max-width:350){
-    .rightDiv {
-    width: 80% !important;
-    margin: 0 auto !important;
-    height: 450px !important;
-    margin-top: 3540px !important;
-    display: block;
-  }
-}
-
-@media (max-width: 768px) {
-  .container-blog {
-    flex-direction: column !important;
-  }
-
-  .innerDiv,
-  .rightDiv {
-    width: 100% !important; 
-  }
-
-  .rightDiv {
-    width: 80% !important;
-    margin: 0 auto !important;
-    height: 450px !important;
-    margin-top: 3700px !important;
-    display: block;
-  }
-
-  .leftDiv{
-    display: none !important;
-  }
-
-  h1, h2 {
-    font-size: 1.2rem; 
-  }
-
-  p {
-    font-size: 0.9rem; 
-    line-height: 1.4;
-    text-align: left !important;
-  }
-
-  .section-blog {
-    padding: 10px; 
-  }
-
-  .section3{
-    margin-top: 50px !important;
-  }
-}
-
-@media (min-width:769px) and (max-width: 992px) {
-  .container-blog {
-    flex-direction: column !important;
-  }
-
-  .innerDiv,
-  .rightDiv {
-   width: 100% !important;
-  }
-
-  .leftDiv{
-    display: none !important;
-  }
-
-  .rightDiv {
-   height:430px !important ;
-   width: 60% !important;
-   margin: 1100px auto 0 auto !important;
-  }
-
-  h1, h2 {
-    font-size: 1.2rem; 
-  }
-
-  p {
-    font-size: 0.9rem; 
-    line-height: 1.4; 
-    text-align: left !important;
-  }
-
-  .section-blog {
-    padding: 10px; 
-  }
-
-  .section3{
-    margin-top: 50px !important;
-  }
-}
-
-@media (min-width:1025px){
-    .container1{
-        max-width: 1000px;
+    .custom-togglingdropdown {
+      display: block;
     }
-}
 
-@media (min-width:993px) and (max-width: 1100px) {
-  .container-blog {
-    flex-direction: column !important; 
-  }
+    .custom-togglingdropdown-hidden {
+      display: none;
+    }
 
-  .innerDiv,
-  .rightDiv {
-    width: 100% !important; 
-  }
+    .leftDiv {
+      width: 20%;
+      padding: 5px;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
+      height: 420px;
+    }
 
-  .leftDiv{
-    display: none !important;
-  }
-  
-  .rightDiv {
-   height:430px !important ;
-   width: 60% !important;
-   margin: -300px auto 0 auto !important;
-  }
+    .innerDiv {
+      width: 60%;
+      padding: 25px;
+      height: auto;
+    }
 
-  h1, h2 {
-    font-size: 1.2rem;
-  }
+    .rightDiv {
+      width: 20%;
+      padding: 5px;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
+      height: 420px;
+    }
 
-  p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    text-align: left !important;
-  }
+    .section-blog-content {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
 
-  .section-blog {
-    padding: 10px;
-  }
+    @media (max-width:350px) {
+      .rightDiv {
+        width: 80% !important;
+        margin: 0 auto !important;
+        height: 450px !important;
+        display: block;
+      }
+    }
 
-  .section3{
-    margin-top: 50px !important;
-  }
-}
+    @media (max-width: 768px) {
+      .container-blog {
+        flex-direction: column !important;
+      }
 
+      .innerDiv,
+      .rightDiv {
+        width: 100% !important;
+        padding: 0;
+      }
+
+      .innerDiv-div {
+        margin-right: 0 !important;
+      }
+
+      .rightDiv {
+        width: 80% !important;
+        margin: 35px auto !important;
+        height: 450px !important;
+        display: block;
+      }
+
+      .rightDiv-div-height {
+        height: 450px !important;
+      }
+
+      .leftDiv {
+        display: none !important;
+      }
+
+      h1,
+      h2 {
+        font-size: 1.8rem !important;
+        line-height: 28px !important;
+      }
+
+      h3 {
+        font-size: 1.4rem !important;
+        line-height: 25px !important;
+        margin-top: 10px !important;
+      }
+
+      p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        text-align: left !important;
+      }
+
+      .section-blog {
+        padding: 10px;
+      }
+
+      .section3 {
+        margin-top: 50px !important;
+      }
+
+      .blog-section-2 {
+        margin: 0 !important;
+      }
+    }
+
+    @media (min-width:769px) and (max-width: 992px) {
+      .container-blog {
+        flex-direction: column !important;
+      }
+
+      .innerDiv {
+        width: 100% !important;
+      }
+
+      .leftDiv {
+        display: none !important;
+      }
+
+      .rightDiv {
+        height: 430px !important;
+        width: 35% !important;
+        margin: auto !important;
+      }
+
+      h1,
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        text-align: left !important;
+      }
+
+      .section-blog {
+        padding: 10px;
+      }
+
+      .section3 {
+        margin-top: 50px !important;
+      }
+
+      .blog-section-2 {
+        margin: 0 !important;
+      }
+    }
+
+    @media (min-width:1025px) {
+      .container1 {
+        max-width: 1000px;
+      }
+    }
+
+    @media (min-width:993px) and (max-width: 1100px) {
+      .container-blog {
+        flex-direction: column !important;
+      }
+
+      .innerDiv,
+      .rightDiv {
+        width: 100% !important;
+      }
+
+      .leftDiv {
+        display: none !important;
+      }
+
+      .rightDiv {
+        height: 430px !important;
+        width: 60% !important;
+        margin: auto !important;
+      }
+
+      h1,
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        text-align: left !important;
+      }
+
+      .section-blog {
+        padding: 10px;
+      }
+
+      .section3 {
+        margin-top: 50px !important;
+      }
+    }
+
+    .custom-togglingdropdown {
+      display: block;
+    }
+
+    .custom-togglingdropdown-hidden {
+      display: none;
+    }
+
+    h2,
+    h3,
+    p {
+      scroll-margin-top: 125px;
+    }
+
+    @media(max-width:768px) {
+      .footer-div {
+        margin: auto !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
 .custom-togglingdropdown {
             display: block;
         }
@@ -294,7 +351,20 @@
             display: none;
         }
      
+        h2,h3,
+    p {
+      scroll-margin-top: 125px;
+    }
 
+    .btn-color{
+      color: white;
+      background-color: #0052CD;
+    }
+
+    .btn-color:hover{
+      color: #0052CD;
+      background-color: white;
+    }
 
     </style>
 
@@ -752,17 +822,17 @@
                 <div class="container d-flex justify-content-center align-items-center" style="height: 400px;">
                     <div class="row text-center ">
                         <div class="col-12 align-self-center text-white">
-                            <h1 class="fs-2 fs-md-3 fs-lg-4 fw-bold mb-4 px-3" style="letter-spacing: 2px; line-height: normal;">
-                                How Did Travel App Development <br class="d-none d-md-block"> Become Crucial In The Tourism Industry
+                            <h1 class="fw-bold mb-4 px-3" style="letter-spacing: 2px; line-height: 4.5rem;font-size: 3rem;">
+                                How Did Travel App Development Become Crucial In The Tourism Industry
                             </h1>
                             <div class="d-flex justify-content-center mt-4 mb-4 flex-wrap justify-content-md-center">
-                                <span class="d-flex align-items-center fs-6 fs-md-5 mb-md-0 me-3">
+                                <span class="d-flex align-items-center fs-md-5 mb-md-0 me-3" style="font-size: 1.5rem;">
                                     <img src="img/blog/Account.png" alt="user" height="20px" width="20px" class="me-2"> Arham Jain
                                 </span>
-                                <span class="d-flex align-items-center fs-6 fs-md-5  mb-md-0 me-3">
+                                <span class="d-flex align-items-center fs-md-5  mb-md-0 me-3" style="font-size: 1.5rem;">
                                     <img src="img/blog/Calendar (5).png" alt="calendar" height="20px" width="20px" class="me-2"> 18/06/2024
                                 </span>
-                                <span class="d-flex align-items-center fs-6 fs-md-5">
+                                <span class="d-flex align-items-center fs-md-5" style="font-size: 1.5rem;">
                                     <img src="img/blog/Timer.png" alt="clock" height="20px" width="20px" class="me-2"> 7 min
                                 </span>
                             </div>
@@ -799,13 +869,13 @@
                             <div class="px-2 mb-4 pt-4 pb-4 pl-3 pr-3 border-right" style="background-color: #e7e7e7; border-radius: 12px; color: black;">
                                 <h3 class="text-capitalize text-3-5 m-0 mb-3" style="text-decoration: underline; text-align: center;">Table Of Contents</h3>
                                 <div style="max-height: 365px; overflow-y: auto; scrollbar-color: #0053ce #e7e7e7; scrollbar-width: thin; padding-right: 10px;">
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-11#rise-mobile" style="color: #000;">1. Rise of Mobile Technology in Travel Industry</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-11#travel-apps-preferred" style="color: #000;">2. Why Are Travel Apps Preferred For Travel?</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-11#user-experience" style="color: #000;">3. Enhancing User Experience Through Travel Apps</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-11#digital-opportunities" style="color: #000;">4. Unlocking Digital Opportunities - Travel Apps in the Tourism Sector</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-11#ai-integration" style="color: #000;">5. Integration of Artificial Intelligence and Machine Learning in Travel Apps</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-11#future-trends" style="color: #000;">6. Future Trends in Travel App Development</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-11#conclusion" style="color: #000;">7. Conclusion</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="travel-app-development-in-tourism#1" style="color: #000;">1. Rise of Mobile Technology in Travel Industry</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="travel-app-development-in-tourism#2" style="color: #000;">2. Why Are Travel Apps Preferred For Travel?</a></p>
+                                    <!-- <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="travel-app-development-in-tourism#3" style="color: #000;">3. Enhancing User Experience Through Travel Apps</a></p> -->
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="travel-app-development-in-tourism#3" style="color: #000;">3. Unlocking Digital Opportunities - Travel Apps in the Tourism Sector</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="travel-app-development-in-tourism#4" style="color: #000;">4. Integration of Artificial Intelligence and Machine Learning in Travel Apps</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="travel-app-development-in-tourism#5" style="color: #000;">5. Future Trends in Travel App Development</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="travel-app-development-in-tourism#6" style="color: #000;">6. Conclusion</a></p>
                                 </div>
                             </div>
                         </aside>
@@ -819,8 +889,8 @@
                                 According to a <strong style="color: #0053ce;font-weight: 600;text-decoration: underline;"> <a href="https://www.statista.com/statistics/1229155/travel-app-usage-worldwide-before-since-covid-19/">report by Statista</a>  </strong>, 28% of the travelers worldwide, have used a travel agency travel mobile app to book different travel services before the Covid - 19, and at the same time 33% of the travelers worldwide have said that they would like to use travel agency specific travel application in future to plan their travel trips. <br><br>
                             </p>
                                 <div class="flex justify-content-center align-items-center">
-                                <img src="img/blog/AscentiaLabsBlog1Images/Blog 1 Graph 1.png" class="d-none d-md-block" alt="" width="100%" height="550px">
-                                <img src="img/blog/AscentiaLabsBlog1Images/Blog 1 Graph 1.png" class="d-block d-md-none" alt="" width="100%" height="250px">
+                                <img src="img/blog/AscentiaLabsBlog1Images/Blog 1 Graph 1.png" class="d-none d-md-block" alt="" width="100%" height="auto">
+                                <img src="img/blog/AscentiaLabsBlog1Images/Blog 1 Graph 1.png" class="d-block d-md-none" alt="" width="100%" height="auto">
                                 </div>
                               <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;"> This blog will help you to understand how travel app development is becoming a key factor in the travel and tourism industry, with some other key aspects like, how travel apps can increase the travel experience of travelers by incorporating modern technology in these apps. So why to wait, let’s deep dive into the details!  <br><br>
                             </p>
@@ -855,14 +925,14 @@
                             </section>
                             
 
-                            <h2 id="rise-mobile" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">The Rise of Mobile Technology in Travel</h2>
+                            <h2 id="1" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">The Rise of Mobile Technology in Travel</h2>
                             <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;">Travel applications make it easy and efficient for travelers to organize their trips, get information on vital tourist places, and help travelers to stay organized while traveling. These travel applications have several features including flight booking, hotel bookings as well as a reservation at local tourist attractions and restaurants; with real-time updates on weather and flights. <br><br>
                                 Furthermore, the advent of mobile technology has opened new doors for travel companies and travel service providers. With the travel mobile app, travel service providers can now communicate directly with their clients and resolve their queries, provide their clients with <strong style="color: #0053ce;text-decoration: underline;"> <a href="travel-app-development">customized travel packages</a>  </strong> service based on their customer's travel persona, with a simple and user-friendly booking and online payment portal. Additionally, this is also a way of ensuring that consumers are satisfied with the travel services while at the same time, it also helps the travel service providers to gather vital data about their customer's travel behavior as well as their travel preferences. <br><br>
                                 As per the <strong style="color: #0053ce;text-decoration: underline;"> <a href="https://www.statista.com/forecasts/1309624/worldwide-revenue-of-travel-apps">report by Statista </a> </strong> , the travel application market is forecasted to increase continuously from 2021, right just after the covid. Currently, the capitalization of the travel app market is at $1.25B US Dollars and it is expected that the travel app market will reach the mark of $2 Billion US dollars by 2027. <br> <br>
                             </p>
                             <img src="img/blog/AscentiaLabsBlog1Images/Blog 1 Graph 2.png" alt="" width="100%" height="auto">
 
-                            <h2 id="travel-apps-preferred" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Why Are Travel Apps Preferred For Travel? </h2>
+                            <h2 id="2" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Why Are Travel Apps Preferred For Travel? </h2>
                             <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;">With the rise in modern technology, travel apps have also transformed how people book and enjoy their travel trips. Many travel mobile applications provide various benefits, such as booking flight tickets, hotels, and making a personalized travel itinerary with real-time price updates on flights and hotel reservations that traditional approaches just cannot match.</p>
                     
                                 <div id="user-experience" class="container zig-zag" style="margin-top: 48px;" >
@@ -885,7 +955,7 @@
                                         <div class="col-lg-4 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
                                             <div class="p-absolute left-0"></div>
                                             <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-                                                <img class="business-visiblity" width="90%" height="480" src="img\blog\AscentiaLabsBlog1Images\young-woman-jumping-isolated-blue 1.png" alt="Authenticity and Credibility" />
+                                                <img class="business-visiblity" width="100%" height="480" src="img\blog\AscentiaLabsBlog1Images\young-woman-jumping-isolated-blue 1.png" alt="Authenticity and Credibility" />
                                             </div>
                                         </div>
                                     </div>
@@ -896,7 +966,7 @@
                                         <div class="col-lg-4 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
                                             <div class="p-absolute right-0"></div>
                                             <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-                                                <img class="increased-visiblity" width="100%" height="400" src="img\blog\AscentiaLabsBlog1Images\tourist-pointing-lateral 1.png" alt="Increase visibility" />
+                                                <img class="increased-visiblity" width="100%" height="auto" src="img\blog\AscentiaLabsBlog1Images\tourist-pointing-lateral 1.png" alt="Increase visibility" />
                                             </div>
                                         </div>
                                         <div class="col-lg-8  text-lg-start order-2 order-lg-2 mt-2 border-left" style="border-left: 3px solid #333!important;">
@@ -951,19 +1021,19 @@
                                     </div>
                                 </div>
 
-                            <h2 id="digital-opportunities" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Unlocking Digital Opportunities - Travel App in the Travel Tourism Sector</h2>
+                            <h2 id="3" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Unlocking Digital Opportunities - Travel App in the Travel Tourism Sector</h2>
                             <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;">Travel applications are creating new digital transformations & opportunities in the travel and tourism industry by changing the way people plan, book, and experience their travel trips. <br><br>
                               The Impact of Travel Mobile Apps on the Travel Tourism Industry <br>
                                According to travel and tourism industry statistics:</p>
     
                                <div class="text-center">
-                               <img src="img/blog/AscentiaLabsBlog1Images/Number Game Section.png" alt="" width="90%" height="auto">
+                               <img src="img/blog/AscentiaLabsBlog1Images/Number Game Section.png" alt="" width="100%" height="auto">
                             </div>
                             <br>
                             <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;"> The above data clearly shows us the importance and the rising demand for travel apps among travelers. Let's now take a deep dive and delve into how AI (Artificial Intelligence) and Machine Learning two modern and widely used technologies are integrated into travel apps, through which travel companies, agencies, and agents can provide tailored travel experiences to their clients. <br>
                             </p>
 
-                            <h2 id="ai-integration" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Integration of AI and Machine Learning in Travel Apps</h2>
+                            <h2 id="4" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Integration of AI and Machine Learning in Travel Apps</h2>
                             <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;">The integration of AI (Artificial Intelligence) and Machine Learning in travel apps has transformed the way travelers travel the world. Such technologies enable travel apps to deliver personalized and customized travel recommendations to consumers, by doing predictive analysis of the traveler's data and providing real-time support to travelers, thereby improving the efficiency and overall enjoyment of consumers' travel experience. <br><br>
                              <img src="img/blog/AscentiaLabsBlog1Images/Blog 1 Integration of AI & ML.png" alt="" width="100%" height="auto">
                              With predictive analysis, artificial intelligence and machine learning in travel apps can analyze massive amounts of traveler data, such as the latest travel trends among different travelers around the world, weather patterns, to forecast future travel patterns and provide tourists with personalized travel recommendations based on the findings. For example, if a traveler is planning to visit a nearby beach during their ongoing travel trip, the travel app will provide the consumer with the list of best beaches in the nearby location of the traveler, with the indication of the optimal time to go based on past weather data.
@@ -971,7 +1041,7 @@
                              Furthermore, AI and Machine Learning can also help to improve the safety and security elements of travel apps. These technologies can examine user travel behavior and trends to identify potential threats or abnormalities, such as fraudulent activity or dangerous travel routes., and by identifying these dangers in real time, travel applications can present travel users with timely alerts and recommendations to ensure their safety while traveling.
                             </p>
 
-                            <h2 id="future-trends" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Future Trends in Travel App Development</h2>
+                            <h2 id="5" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Future Trends in Travel App Development</h2>
                             <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;">Virtual Reality (VR) and Augmented Reality (AR):  AR and VR have the potential to completely transform the way we travel the world. In the future, travel apps may include VR and AR elements that allow users to visually explore tourist places, observe famous tourist attractions in 3D, and receive real-time information and insights.
                                 <br><br>
                                 Voice Recognition: With the popularity and the advancement of AI in voice assistants and with 93.7% of search queries being answered perfectly by voice assistants, it is now possible to say that travel apps may include voice recognition in the coming 2-3 years. This means that users will now have the ability to utilize voice commands to search for and book travel services such as flight tickets, hotel bookings, and reservations, which simplifies the entire travel booking process.
@@ -979,7 +1049,7 @@
                                 AI Chatbot-Based Customer Support: A number of travel apps currently use AI chatbots for different travel services to provide quick customer support and guidance to travelers. Travelers are using AI chatbots to know any specific information they want to know about their travel before, during, or after their travel journey.
                             </p>
 
-                            <h2 id="conclusion" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Conclusion</h2>
+                            <h2 id="6" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Conclusion</h2>
                             <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;">To summarize, travel app development has become a crucial thing in the travel and tourism industry, as we now know how travel apps can transform travel plans and increase the overall experience of the travel customers during their travel trip. These apps provide the users with real-time access to flight bookings, hotel bookings with personalized travel recommendations to consumers. Such travel applications have also promoted sustainability in travel and tourism practices by harnessing technology, in addition to improving cost efficiency and facilitating communication. As the travel tourism sector evolves, travel applications will play an increasingly important role in driving innovation and changing the future of travel and tourism industry through improved accessibility and efficiency, with an increased awareness on eco tourism.
                             </p>
 
@@ -1008,8 +1078,8 @@
                                <input type="text" name="message" placeholder="Message" id="message"
                                       style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
                                       <small class="error" id="messageError"></small>
-                               <button type="submit" 
-                                       style="width: 100%; padding: 5px;margin-top: 10px; background: #426CC1; color: #fff; border: none; border-radius: 25px; cursor: pointer;">
+                               <button type="submit" class="btn-color"
+                                       style="width: 100%; padding: 5px;margin-top: 10px; border: none; border-radius: 25px; cursor: pointer;">
                                    Submit
                                </button>
                                <div id="formMessage" class="form-message"></div>
@@ -1020,7 +1090,7 @@
                 </div>
               </section>
             
-              <section class="blog-section-2 container py-5" style="max-width: 1200px; margin: 130px auto 70px;">
+              <section class="blog-section-2 container py-5" style="max-width: 1200px; margin: 70px auto 70px;">
                 <!-- Section Divider -->
                 <hr class="mx-auto" style="border: 0; height: 3px; width: 150px; background-color: #0052CD; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" />
                 <h2 class="text-center mt-4 text-dark fw-bold">Other Blogs</h2>
@@ -1082,7 +1152,7 @@
 
         <footer id="footer" class="bg-color-primary border-0 mt-0">
             <div class="container container-xl-custom pt-4 pb-3">
-                <div class="row py-5">
+                <div class="row footer-div py-5">
                     <div class="col-md-4 col-lg-3 mb-4 mb-lg-0">
                         <h4 class="ls-0">OUR ADDRESS</h4>
                         <ul class="list list-unstyled">

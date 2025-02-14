@@ -132,7 +132,7 @@
 .innerDiv {
   width: 60%;
   padding: 5px;
-  height: 515rem;
+  height: auto;
 }
 
 .rightDiv{
@@ -156,17 +156,24 @@
     flex-direction: column !important;
   }
 
+  .innerDiv-div{
+    margin-right: 0 !important;
+  }
+
   .innerDiv,
   .rightDiv {
     width: 100% !important; 
   }
 
   .rightDiv {
-    width: 80% !important;
+    width: 85% !important;
     margin: 0 auto !important;
     height: 450px !important;
-    margin-top: 3100px !important;
     display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
   }
 
   .leftDiv{
@@ -290,7 +297,51 @@
         .custom-togglingdropdown-hidden {
             display: none;
         }
+        
+h2,h3,
+    p {
+      scroll-margin-top: 125px;
+    }
 
+    .btn-color{
+      color: white;
+      background-color: #0052CD;
+    }
+
+    .btn-color:hover{
+      color: #0052CD;
+      background-color: white;
+    }
+
+    @media(max-width:768px) {
+      .footer-div {
+        margin: auto !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .h1-class{
+        line-height: 3.5rem !important;
+        font-size: 2rem !important;
+      }
+
+      .capitalize-cta{
+        font-size: 1.5rem !important;
+      }
+
+      .capitalize-cta-btn{
+        margin-bottom: 15px !important;
+        margin-top: 15px !important;
+        background-color: #fff;
+        padding: 15px;
+      }
+
+      .capitalize-cta-class{
+         height: 250px;
+      }
+    }
 
     </style>
 
@@ -748,17 +799,17 @@
                 <div class="container d-flex justify-content-center align-items-center" style="height: 400px;">
                     <div class="row text-center ">
                         <div class="col-12 align-self-center text-white">
-                            <h1 class="fs-2 fs-md-3 fs-lg-4 fw-bold mb-4 px-3" style="letter-spacing: 2px; line-height: normal;">
-                                Latest Tourism Report [2025] - <br class="d-none d-md-block"> New Insights in the Travel Industry
+                            <h1 class="h1-class fw-bold mb-4 px-3" style="letter-spacing: normal; line-height: 4.5rem;font-size: 3rem;">
+                                Latest Tourism Report [2025] - New Insights in the Travel Industry
                             </h1>
                             <div class="d-flex justify-content-center mt-4 mb-4 flex-wrap justify-content-md-center">
-                                <span class="d-flex align-items-center fs-6 fs-md-5 mb-md-0 me-3">
+                                <span class="d-flex align-items-center fs-md-5 mb-md-0 me-3" style="font-size: 1.5rem;">
                                     <img src="img/blog/Account.png" alt="user" height="20px" width="20px" class="me-2"> Arham Jain
                                 </span>
-                                <span class="d-flex align-items-center fs-6 fs-md-5  mb-md-0 me-3">
+                                <span class="d-flex align-items-center fs-md-5  mb-md-0 me-3" style="font-size: 1.5rem;">
                                     <img src="img/blog/Calendar (5).png" alt="calendar" height="20px" width="20px" class="me-2"> 18/06/2024
                                 </span>
-                                <span class="d-flex align-items-center fs-6 fs-md-5">
+                                <span class="d-flex align-items-center fs-md-5" style="font-size: 1.5rem;">
                                     <img src="img/blog/Timer.png" alt="clock" height="20px" width="20px" class="me-2"> 7 min
                                 </span>
                             </div>
@@ -796,17 +847,17 @@
                             <div class="px-2 mb-4 pt-4 pb-4 pl-3 pr-3 border-right" style="background-color: #e7e7e7; border-radius: 12px; color: black;">
                                 <h3 class="text-capitalize text-3-5 m-0 mb-3" style="text-decoration: underline; text-align: center;">Table Of Contents</h3>
                                 <div style="max-height: 365px; overflow-y: auto; scrollbar-color: #0053ce #e7e7e7; scrollbar-width: thin; padding-right: 10px;">
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-post#evolution-travel" style="color: #000;">1. Evolution Of The Travel And Tourism Industry In India</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-post#contribution-gdp" style="color: #000;">2. Rising Contribution of Travel & Tourism Sector in India's GDP</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-post#growth-e-visa" style="color: #000;">3. Growth In E-Tourist Visa</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-22#foreign-arrivals" style="color: #000;">4. Arrivals of Foreign Tourists in India Post-Pandemic</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-22#tourist-attraction" style="color: #000;">5. What Attracted Foreign Tourists to India?</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-22#domestic-growth" style="color: #000;">6. Domestic Tourism Driving India's Industry Growth</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-22#rising-income" style="color: #000;">7. Rising Income & Demographics Boosting Tourism in India</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-22#leading-states" style="color: #000;">8. Leading States & UTs In India Attracting Tourists</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-22#major-companies" style="color: #000;">9. Key Companies Role In Travel & Tourism Sector In India</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-22#airlines-growth" style="color: #000;">10. Airlines Industry Poised For Significant Growth</a></p>
-                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-22#conclusion" style="color: #000;">11. Conclusion</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="latest-tourism-insights2025#1" style="color: #000;">1. Evolution Of The Travel And Tourism Industry In India</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="latest-tourism-insights2025#2" style="color: #000;">2. Rising Contribution of Travel & Tourism Sector in India's GDP</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="latest-tourism-insights2025#3" style="color: #000;">3. Growth In E-Tourist Visa</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="latest-tourism-insights2025#4" style="color: #000;">4. Arrivals of Foreign Tourists in India Post-Pandemic</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="latest-tourism-insights2025#5" style="color: #000;">5. What Attracted Foreign Tourists to India?</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="latest-tourism-insights2025#6" style="color: #000;">6. Domestic Tourism Driving India's Industry Growth</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="latest-tourism-insights2025#7" style="color: #000;">7. Rising Income & Demographics Boosting Tourism in India</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="latest-tourism-insights2025#8" style="color: #000;">8. Leading States & UTs In India Attracting Tourists</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="latest-tourism-insights2025#9" style="color: #000;">9. Key Companies Role In Travel & Tourism Sector In India</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="latest-tourism-insights2025#10" style="color: #000;">10. Airlines Industry Poised For Significant Growth</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="latest-tourism-insights2025#11" style="color: #000;">11. Conclusion</a></p>
                                 </div>
                             </div>
                         </aside>
@@ -814,7 +865,7 @@
                     </div>
                   </div>
                   <div class="innerDiv mt-5 ml-2 mr-2">
-                    <div class="mb-5 mb-lg-0" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100" style="margin-right: 10px;">
+                    <div class="innerDiv-div mb-5 mb-lg-0" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100" style="margin-right: 10px;">
                         <div class="blog-content">
                             <p style="font-size: 1rem;text-align: left;color: black;line-height: 23px;">The travel tourism industry has always been a dynamic and ever-changing sector, that adapts itself with the global trends, economic shifts, and according to the travel consumer preferences. Keeping the above parameters, a new report has shed light on the market analysis, the contribution of tourism to India's GDP after the global pandemic, and the rising growth of the sector within the <a href="travel-app-development" class="text-decoration-underline font-weight-bold"> travel </a> industry. <br>
                                   </p>
@@ -834,11 +885,11 @@
                                     </div>
                                     
                                     <!-- Left Side (Heading & Subheading) -->
-                                    <div class="col-12 col-md-7 pe-md-4 text-center text-md-start order-2 order-md-1">
-                                      <h1 class="h5 fw-bold mb-3">
+                                    <div class="capitalize-cta-class col-12 col-md-7 pe-md-4 text-center text-md-start order-2 order-md-1">
+                                      <h2 class="capitalize-cta h5 fw-bold mb-3">
                                         Capitalize Your Travel Business In The Rapidly Growing US $927.30 Billion Travel & Tourism Market Size With Latest Tech!
-                                      </h1>
-                                      <a href="contact-us" 
+                                      </h2>
+                                      <a class="capitalize-cta-btn" href="contact-us" 
                                             class="btn btn-light fw-bold px-4 py-2 rounded-pill" 
                                             style="font-size: 12px; border-radius: 20px !important; transition: all 0.3s ease; background-color: light; color: black; border: none;"
                                             onmouseover="this.style.backgroundColor='black'; this.style.color='white';"
@@ -853,7 +904,7 @@
                               
                               
 
-                              <h2 id="evolution-travel" class="mb-3 mt-4" style="font-size: 1.8rem; font-weight: 500; color: #000;">
+                              <h2 id="1" class="mb-3 mt-4" style="font-size: 1.8rem; font-weight: 500; color: #000;">
                                 Evolution Of The Travel And Tourism Industry In India
                             </h2>
                             
@@ -912,7 +963,7 @@
                             
 
 
-                            <h2 id="contribution-gdp" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Rising Contribution Of Travel & Tourism Sector In India's GDP</h2>
+                            <h2 id="2" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Rising Contribution Of Travel & Tourism Sector In India's GDP</h2>
                         
                             <div class="text-center">
                             <img src="img\blog\Ascentia Blog 2 Images\iloveimg-compressed (2)\Blog 2 Image 2.jpg" class="d-none d-md-block" alt="" width="100%" height="330px" margin="auto">
@@ -924,13 +975,13 @@
                                 According to the World Travel & Tourism Council (WTTC), the Travel and Tourism sector in India will grow at an average rate of 7.1% annually. WTTC also forecasted that the total number of jobs in the travel tourism sector in India alone will reach an incredible mark of 39 Million by 2024, and will touch the 50 Million mark in the next 5-7 years.<br> 
                             </p>
 
-                            <h2 id="growth-e-visa" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Growth In E-Tourist Visa </h2>
+                            <h2 id="3" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Growth In E-Tourist Visa </h2>
                             <p style="font-size: 1rem;text-align: left;color: #333;line-height: 23px;">The Government of India launched the e-visa on 27 November 2014 and initially launched the e-tourist Visa in 46 countries. Since then, this option has been extended to citizens of 167 countries, and as on 1st April 2024, Japan is the latest country that has been added to the list. E-Visa covers several categories including e-Tourist Visa (30 days/ 1 year/ 5 year), e-Business, e-Conference, e-Medical, and e-Medical Attendant visas.  In addition, a special medical visa has been introduced for foreign travelers seeking treatment in India and an electronic medical visa is available to citizens all across 166 countries. <br>
                     <br>             According to a <a href="https://www.statista.com/statistics/1096267/india-foreign-tourist-arrivals-e-tourist-visa/" class="font-weight-bold text-decoration-underline"> report by Statista,</a> during the period 2021-2022, approximately 2,27,230 foreign tourists arrived in India through E-Visa, a 73% decrease from the previous year due to the impact of the coronavirus pandemic. <br></p>
                            <div class="text-center">
                                 <img src="img\blog\Blog 2 Images Update (Ascentia\Blog 2 Growth in E Visa.png" alt="" width="100%" height="auto">
                             </div> <br> 
-                            <h2 id="foreign-arrivals" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Arrivals of Foreign Tourists in India Post -Pandemic</h2>
+                            <h2 id="4" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Arrivals of Foreign Tourists in India Post -Pandemic</h2>
                             <p style="font-size: 1rem;text-align: left;color: #333;line-height: 23px;">According to the Ministry of Tourism (MOT), a total of 1.070 million foreign tourists arrived in India in December 2023. There were 9,236,108 FTAs ​​in January-December 2023, compared to 6,437,467 in January-December 2022. Indira Gandhi International Airport (New Delhi) was one of the airports in India with the highest number of foreign tourists (29.92%), followed by. Mumbai Airport (18.46%), Haridaspur Land Check Post (7.09%), Chennai Airport (7.02%) and Bengaluru Airport (6.20%).
                                  <br><br>
                                 The G-20 Presidency also offers India’s tourism sector an unparalleled opportunity to highlight its offerings and share its success stories on a global stage. By 2028, India's travel and tourism sector is expected to earn US$ 50.9 Billion in visitor exports, compared to US$ 28.9 Billion in 2018. The Tourism Ministry has undertaken the ‘Namaste India’ Campaign to encourage international visitors to travel to India. Additionally, the United Nations World Tourism Organisation selected Pochampally in Telangana as one of the best tourist villages in November 2021. <br><br>
@@ -939,7 +990,7 @@
                             </div>
                             </p>
 
-                            <h2 id="tourist-attraction" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">What Attracted Foreign Tourists to India?</h2>
+                            <h2 id="5" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">What Attracted Foreign Tourists to India?</h2>
                             <p style="font-size: 1rem;text-align: left;color: #333;line-height: 23px;">Between January and December 2023, 26.52% of foreign tourists visited India to connect with the Indian diaspora, accounting for a total of 9,236,108 visitors. Tourism remains a crucial source of foreign exchange for India, similar to many other countries. Although Foreign Exchange Earnings (FEE) increased at a compound annual growth rate (CAGR) of 7% between 2016 and 2019, there was a dip in 2020 due to the COVID-19 pandemic. In the year 2023, the total revenue from foreign exchange (FEE) from the month of January to December stood at $28.1 Billion. <br><br>
                             </p>
                             <div class="text-center">
@@ -948,7 +999,7 @@
                                 <p style="font-size: 1rem;text-align: left;color: #333;line-height: 23px;"> To boost global tourism within the nation, the Indian Ministry of Tourism also introduced the "Namaste India" initiative aimed at attracting additional international tourists to discover India. Moreover, the need for medical tourism in India is expected to expand significantly, with a compound annual growth rate (CAGR) of 19% forecasted from 2022 to 2032. <br>
                             </p>
 
-                            <h2 id="domestic-growth" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Domestic Tourism Driving India's Industry Growth</h2>
+                            <h2 id="6" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Domestic Tourism Driving India's Industry Growth</h2>
                             <div class="text-center">
                             <img src="img\blog/newest/Frame 1000002711 (1).png" alt="" width="100%" height="auto">
                             </div> <br>
@@ -959,7 +1010,7 @@
                                 <br>
                             </p>
 
-                            <h2 id="rising-income" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Rising Income & Demographics Boosting Tourism In India</h2>
+                            <h2 id="7" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Rising Income & Demographics Boosting Tourism In India</h2>
                             <p style="font-size: 1rem;text-align: left;color: #333;line-height: 23px;">Since 2001, the per capita income in India grew from US $460 to US $1,413 in 2011 to US $2,150 in 2021. In the third quarter of 2024, India's per capita income reached to US $2770.77, and is projected to grow by nearly 70%, reaching US $4,000 by FY 2030, up from US $2,450 in fiscal 2023. <br><br> </p>
                             <div class="text-center">
                             
@@ -967,7 +1018,7 @@
                             </div>
                             <p style="font-size: 1rem;text-align: left;color: #333;line-height: 23px;">The country's economic growth is expected to increase from US $199.63 Billion in 2018 to US $405.84 Billion by 2028. ICRA forecasts nationwide premium hotel occupancy to reach approximately 70-72% in FY 2024, further increasing to around 72-74% in FY 2025, following a recovery to 68-70% in FY 2023. According to Bloomberg Economics' base case scenario, India's economy will see a growth rate of almost 9% by the end of this decade and will overtake China (whose economy will slow down to 3.5% during the same period) as the biggest growth driver by 2028.
                              <br> </p>
-                            <h2 id="leading-states" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Leading States & UTs In India Attracting Tourists</h2>
+                            <h2 id="8" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Leading States & UTs In India Attracting Tourists</h2>
                             <img src="img\blog\Ascentia Blog 2 Images\iloveimg-compressed (2)\Blog 2 Image 8.jpg" alt="" width="100%" height="auto">
                             <p style="font-size: 1rem;text-align: left;color: #333;line-height: 23px;">India with its diverse culture and history attracts millions of tourists every year. Goa, Maharashtra, Tamil Nadu, Uttar Pradesh, Karnataka, and Andhra Pradesh are some of the states in India that are attracting a larger number of domestic and international tourist to India. <br><br>
                                 Below are the two tables showing the number of domestic and foreign tourist arrivals in different states of India. </p>
@@ -976,12 +1027,12 @@
                             <img src="img\blog\Ascentia Blog 2 Images\iloveimg-compressed (2)\Blog 2 Image 9.jpg" alt="" width="100%" height="auto">
                         </div>
                         <br>
-                            <h2 id="major-companies" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Key Companies Role In Travel & Tourism Sector In India</h2>
+                            <h2 id="9" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Key Companies Role In Travel & Tourism Sector In India</h2>
                             <p style="font-size: 1rem;text-align: left;color: #333;line-height: 23px;">According to figures from the World Travel & Tourism Council (WTTC), the travel and tourism sector contributed Rs. 16.5 lakh crore (US $197 billion) to the Indian economy in 2022. <br><br></p>
                             <div class="text-center">
                             <img src="img\blog\Blog 2 Images Update (Ascentia\Blog 2 Major Companies.png" alt="" width="100%" height="auto">
                             </div> <br>
-                            <h2 id="airlines-growth" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Airlines Industry Poised For Significant Growth </h2>
+                            <h2 id="10" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Airlines Industry Poised For Significant Growth </h2>
                             <p style="font-size: 1rem;text-align: left;color: #333;line-height: 23px;">
                                 <h3 class="font-weight-bold" style="font-size: 1rem;text-align: left;color: #333;line-height: 20px;margin-top: 10px;margin-bottom: 5px; text-transform: none;"> 1. Low-Cost Airline Carriers</h3>
 
@@ -1013,7 +1064,7 @@
                               <p  style="font-size: 1rem;text-align: left;color: #333;line-height: 23px;">Further Dipak Diva, MD of Travel Corporation of India at an event called "Tres 2024" said that to improve the accessibility and connectivity of foreign tourists to India, from January 2026 Air India is going to play a major role in increasing inbound tourism to India as the company has signed a deal to acquire 470 aircraft from Airbus and Boeing. </p>  
                             </p> 
 
-                            <h2 id="conclusion" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px; margin-top: 30px;">Conclusion</h2>
+                            <h2 id="11" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px; margin-top: 30px;">Conclusion</h2>
                             <p style="font-size: 1rem;text-align: left;color: #333;line-height: 23px;">Looking at the above stats and insights it looks like the Travel and Tourism sector in India will have a promising going further in the future. With the inauguration of new airports and the enhancements in the number of flights, it is expected that it will improve the overall air connectivity thereby attracting more domestic and international tourists. 
                             </p>
                                <p style="font-size: 1rem;text-align: left;color: #333;line-height: 23px;"> Looking at the bigger picture, it looks like the travel tourism sector is poised to evolve in the future, and this sector is expected to create many new jobs in India and will contribute significantly to India's economic growth.
@@ -1043,8 +1094,8 @@
                             <input type="text" name="message" placeholder="Message" id="message"
                                    style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
                                    <small class="error" id="messageError"></small>
-                            <button type="submit" 
-                                    style="width: 100%; padding: 5px;margin-top: 10px; background: #426CC1; color: #fff; border: none; border-radius: 25px; cursor: pointer;">
+                            <button type="submit" class="btn-color"
+                                    style="width: 100%; padding: 5px;margin-top: 10px; border: none; border-radius: 25px; cursor: pointer;">
                                 Submit
                             </button>
                             <div id="formMessage" class="form-message"></div>
@@ -1117,7 +1168,7 @@
 
         <footer id="footer" class="bg-color-primary border-0 mt-0">
             <div class="container container-xl-custom pt-4 pb-3">
-                <div class="row py-5">
+                <div class="row footer-div py-5">
                     <div class="col-md-4 col-lg-3 mb-4 mb-lg-0">
                         <h4 class="ls-0">OUR ADDRESS</h4>
                         <ul class="list list-unstyled">
